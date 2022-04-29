@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/Coert/Documents/GitHub/fpga-math-add-ripplecarry/math_adder_ripplecarry_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="math_adder_ripplecarry_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="3" />
+   <wvobject fp_name="/math_adder_ripplecarry_tb/a" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">a[32:0]</obj_property>
+      <obj_property name="ObjectShortName">a[32:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/math_adder_ripplecarry_tb/b" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">b[32:0]</obj_property>
+      <obj_property name="ObjectShortName">b[32:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/math_adder_ripplecarry_tb/s" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">s[32:0]</obj_property>
+      <obj_property name="ObjectShortName">s[32:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

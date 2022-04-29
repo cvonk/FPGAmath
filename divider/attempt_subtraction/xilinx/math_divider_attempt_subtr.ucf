@@ -1,0 +1,22 @@
+# we're only connecting x[3:0], y[3:0] and q[7:0]
+# when using with xWIDTH>4 or xWIDTH>4, or for r[] this
+# will result in warnings like
+#   "partically locked io bus is found"
+#   "An IO Bus with more than one IO standard is found"
+
+# Connector J4, inputs
+NET x<0> LOC = H12 | IOSTANDARD = LVCMOS33;  # "PMOD2_P1"
+NET x<1> LOC = G13 | IOSTANDARD = LVCMOS33;  # "PMOD2_P2"
+NET x<2> LOC = E16 | IOSTANDARD = LVCMOS33;  # "PMOD2_P3"
+NET x<3> LOC = E18 | IOSTANDARD = LVCMOS33;  # "PMOD2_P4"
+NET y<0> LOC = K12 | IOSTANDARD = LVCMOS33;  # "PMOD2_P7"
+NET y<1> LOC = K13 | IOSTANDARD = LVCMOS33;  # "PMOD2_P8"
+NET y<2> LOC = F17 | IOSTANDARD = LVCMOS33;  # "PMOD2_P9"
+NET y<3> LOC = F18 | IOSTANDARD = LVCMOS33;  # "PMOD2_P10"
+
+# Connector J5, outputs
+NET q<0> LOC = F15 | IOSTANDARD = LVCMOS33;  # "PMOD1_P1"
+NET q<1> LOC = F16 | IOSTANDARD = LVCMOS33;  # "PMOD1_P2"
+NET q<2> LOC = C17 | IOSTANDARD = LVCMOS33;  # "PMOD1_P3"
+NET q<3> LOC = C18 | IOSTANDARD = LVCMOS33;  # "PMOD1_P4"
+NET q<4> LOC = F14 | IOSTANDARD = LVCMOS33;  # "PMOD1_P7"

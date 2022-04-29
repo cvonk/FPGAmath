@@ -1,0 +1,20 @@
+# we're only connecting a[3:0, b[3:0] and p[7:0]
+# when using with N>4, this will result in "partically locked io bus is found"
+# and "An IO Bus with more than one IO standard is found"
+
+# Connector J4, inputs
+NET a<0> LOC = H12 | IOSTANDARD = LVCMOS33;  # "PMOD2_P1"
+NET a<1> LOC = G13 | IOSTANDARD = LVCMOS33;  # "PMOD2_P2"
+NET a<2> LOC = E16 | IOSTANDARD = LVCMOS33;  # "PMOD2_P3"
+NET a<3> LOC = E18 | IOSTANDARD = LVCMOS33;  # "PMOD2_P4"
+NET b<0> LOC = K12 | IOSTANDARD = LVCMOS33;  # "PMOD2_P7"
+NET b<1> LOC = K13 | IOSTANDARD = LVCMOS33;  # "PMOD2_P8"
+NET b<2> LOC = F17 | IOSTANDARD = LVCMOS33;  # "PMOD2_P9"
+NET b<3> LOC = F18 | IOSTANDARD = LVCMOS33;  # "PMOD2_P10"
+
+# Connector J5, outputs
+NET s<0> LOC = F15 | IOSTANDARD = LVCMOS33;  # "PMOD1_P1"
+NET s<1> LOC = F16 | IOSTANDARD = LVCMOS33;  # "PMOD1_P2"
+NET s<2> LOC = C17 | IOSTANDARD = LVCMOS33;  # "PMOD1_P3"
+NET s<3> LOC = C18 | IOSTANDARD = LVCMOS33;  # "PMOD1_P4"
+NET s<4> LOC = F14 | IOSTANDARD = LVCMOS33;  # "PMOD1_P7"
