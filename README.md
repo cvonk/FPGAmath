@@ -12,10 +12,10 @@ The repository contains HTML simulations used in the article, as well as Verilog
 
   - Adder
       - ripple carry
-      - Look ahead
-      - Look ahead with 2 levels
+      - look ahead
+      - look ahead with 2 levels
   - Subtractor
-      - Ripple borrow
+      - ripple borrow
   - Multiplier
       - array
       - carry save
