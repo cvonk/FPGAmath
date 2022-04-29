@@ -24,7 +24,7 @@ The repository contains HTML simulations used in the article, as well as Verilog
 
 But what good are fast math circuits, if you can’t show them off? We decided to make a test setup to both demonstrate and verify the implementation of the circuits.
 
-In the demo, an Arduino reads the operands from rotary encoders and shows them on 7-segment displays. It sends the operands along with the desired operation to the FPGA. That then returns the result to the Arduino, that shows it on the OLED screen.
+In the demo, an Arduino reads the operands from rotary encoders and shows them on 7-segment displays. It sends the operands along with the desired operation to the FPGA. That then returns the result to the Arduino, that shows it on the display.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/txJgpMz7c0E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
