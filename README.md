@@ -6,7 +6,7 @@
 ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/cvonk/FPGAmath)
 ![GitHub](https://img.shields.io/github/license/cvonk/FPGAmath)
 
-The article <a href=https://coertvonk.com/category/hw/building-math-circuits">Building Math Circuits</a> describes how elementary math operations, such as addition/subtraction, multiplication/division and square root, can be done using logic circuits.
+The article [Building Math Circuits](https://coertvonk.com/category/hw/building-math-circuits) describes how elementary math operations, such as addition/subtraction, multiplication/division and square root, can be done using logic circuits.
 
 The repository contains HTML simulations used in the article, as well as Verilog HDL implementations of
 
