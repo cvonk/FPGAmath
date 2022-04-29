@@ -1,0 +1,62 @@
+div.circuit-container {
+  max-width: 96%;
+  width: auto;
+  margin: 5px 0 5px 0;
+  position: relative;
+}
+
+img.circuit-schematic {
+  width: 100%;
+  height: auto;
+}
+
+.circuit-input {
+  -webkit-user-select: none;
+  transition: all 1s ease;
+  background: white;
+  border: 1px solid;
+  border-radius: 5px;
+  position: absolute;
+  font-family: courier;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+}
+.circuit-input:active {
+    background-color: yellow;
+    -webkit-transition: background-color 0.1s ease-out;
+}
+
+.circuit-output {
+  background: none;
+  position: absolute;
+  font-family: courier;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.circuit-intern {
+  background: none;
+  border: none;
+  position: absolute;
+  font-family: courier;
+  font-size: 1em;
+  font-weight: regular;
+  text-align: center;
+}
+
+.circuit-container > .flash {
+  -webkit-animation-name: circuit-flash-animation;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes circuit-flash-animation {
+  from {
+    background: yellow;
+  }
+  to {
+    background: default;
+  }
+}

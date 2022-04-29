@@ -42,7 +42,7 @@ set_global_assignment -name DEVICE EP4CE22F17C6
 set_global_assignment -name TOP_LEVEL_ENTITY math_multiplier_carrysave
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 16.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "12:59:57  NOVEMBER 23, 2016"
-set_global_assignment -name LAST_QUARTUS_VERSION "16.1.0 Lite Edition"
+set_global_assignment -name LAST_QUARTUS_VERSION "21.1.0 Lite Edition"
 set_global_assignment -name VERILOG_FILE math_multiplier_ma_block.v
 set_global_assignment -name VERILOG_FILE math_multiplier_carrysave_tb.v
 set_global_assignment -name VERILOG_FILE math_multiplier_carrysave.v

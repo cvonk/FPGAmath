@@ -1,0 +1,124 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="eng-US">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../circuit-simulation.css" type="text/css">
+    <script src="8-bit simplified-Samovi.js" type="text/javascript"></script>
+    <script src="../circuit-simulation.js" type="text/javascript"></script>
+  </head>
+  <body>
+<div class="circuit-container" id="circuit-sss">
+  <img class="circuit-schematic" alt="" src="https://coertvonk.com/wp-content/logic-simulation/squareroot/8-bit simplified-Samovi.svg">
+  <div class="circuit-input" id="x0" style="left:92.7%;top:1.2%;">1</div>
+  <div class="circuit-input" id="x1" style="left:82.2%;top:1.2%;">0</div>
+  <div class="circuit-input" id="x2" style="left:71.6%;top:1.2%;">0</div>
+  <div class="circuit-input" id="x3" style="left:60.9%;top:1.2%;">1</div>
+  <div class="circuit-input" id="x4" style="left:50.3%;top:1.2%;">0</div>
+  <div class="circuit-input" id="x5" style="left:39.8%;top:1.2%;">1</div>
+  <div class="circuit-input" id="x6" style="left:29.2%;top:1.2%;">0</div>
+  <div class="circuit-input" id="x7" style="left:18.6%;top:1.2%;">1</div>
+  <div class="circuit-intern" id="b00" style="left:24.5%;top:12%;">?</div>
+  <div class="circuit-intern" id="b01" style="left:14%;top:12%;">?</div>
+  <div class="circuit-intern" id="b02" style="left:0.5%;top:18%;">?</div>
+  <div class="circuit-intern" id="b10" style="left:45.5%;top:32.3%;">?</div>
+  <div class="circuit-intern" id="b11" style="left:35%;top:32.3%;">?</div>
+  <div class="circuit-intern" id="b12" style="left:24.5%;top:32.3%;">?</div>
+  <div class="circuit-intern" id="b13" style="left:11%;top:38.5%;">?</div>
+  <div class="circuit-intern" id="b20" style="left:67%;top:53%;">?</div>
+  <div class="circuit-intern" id="b21" style="left:56%;top:53%;">?</div>
+  <div class="circuit-intern" id="b22" style="left:45.5%;top:53%;">?</div>
+  <div class="circuit-intern" id="b23" style="left:35%;top:53%;">?</div>
+  <div class="circuit-intern" id="b24" style="left:21.5%;top:59%;">?</div>
+  <div class="circuit-intern" id="b30" style="left:88%;top:73.5%;">?</div>
+  <div class="circuit-intern" id="b31" style="left:77.5%;top:73.5%;">?</div>
+  <div class="circuit-intern" id="b32" style="left:67%;top:73.5%;">?</div>
+  <div class="circuit-intern" id="b33" style="left:56.5%;top:73.5%;">?</div>
+  <div class="circuit-intern" id="b34" style="left:46%;top:73.5%;">?</div>
+  <div class="circuit-intern" id="b35" style="left:32%;top:79.5%;">?</div>
+  <!--
+  <div class="circuit-intern" id="xi00" style="left:29.5%;top:12.7%;">?</div>
+  <div class="circuit-intern" id="xi01" style="left:18.9%;top:12.7%;">?</div>
+  <div class="circuit-intern" id="xi02" style="left:8.2%;top:12.7%;">?</div>
+  <div class="circuit-intern" id="xi10" style="left:50.5%;top:33.3%;">?</div>
+  <div class="circuit-intern" id="xi11" style="left:40%;top:33.3%;">?</div>
+  <div class="circuit-intern" id="xi12" style="left:29.5%;top:33.3%;">?</div>
+  <div class="circuit-intern" id="xi13" style="left:19%;top:33.3%;">?</div>
+  <div class="circuit-intern" id="xi20" style="left:71.7%;top:53.5%;">?</div>
+  <div class="circuit-intern" id="xi21" style="left:61%;top:53.5%;">?</div>
+  <div class="circuit-intern" id="xi22" style="left:50.5%;top:53.5%;">?</div>
+  <div class="circuit-intern" id="xi23" style="left:40%;top:53.5%;">?</div>
+  <div class="circuit-intern" id="xi24" style="left:29.5%;top:53.5%;">?</div>
+  <div class="circuit-intern" id="xi30" style="left:92.9%;top:74%;">?</div>
+  <div class="circuit-intern" id="xi31" style="left:82.3%;top:74%;">?</div>
+  <div class="circuit-intern" id="xi32" style="left:71.7%;top:74%;">?</div>
+  <div class="circuit-intern" id="xi33" style="left:61.1%;top:74%;">?</div>
+  <div class="circuit-intern" id="xi34" style="left:50.5%;top:74%;">?</div>
+  <div class="circuit-intern" id="xi35" style="left:40%;top:74%;">?</div>
+  <div class="circuit-intern" id="yi00" style="left:27%;top:12.7%;">?</div>
+  <div class="circuit-intern" id="yi01" style="left:16.5%;top:12.7%;">?</div>
+  <div class="circuit-intern" id="yi02" style="left:5.8%;top:12.7%;">?</div>
+  <div class="circuit-intern" id="yi10" style="left:48%;top:33.3%;">?</div>
+  <div class="circuit-intern" id="yi11" style="left:37.5%;top:33.3%;">?</div>
+  <div class="circuit-intern" id="yi12" style="left:27%;top:33.3%;">?</div>
+  <div class="circuit-intern" id="yi13" style="left:16.5%;top:33.3%;">?</div>
+  <div class="circuit-intern" id="yi20" style="left:69.1%;top:53.5%;">?</div>
+  <div class="circuit-intern" id="yi21" style="left:58.5%;top:53.5%;">?</div>
+  <div class="circuit-intern" id="yi22" style="left:48%;top:53.5%;">?</div>
+  <div class="circuit-intern" id="yi23" style="left:37.5%;top:53.5%;">?</div>
+  <div class="circuit-intern" id="yi24" style="left:27%;top:53.5%;">?</div>
+  <div class="circuit-intern" id="yi30" style="left:90.3%;top:74%;">?</div>
+  <div class="circuit-intern" id="yi31" style="left:79.8%;top:74%;">?</div>
+  <div class="circuit-intern" id="yi32" style="left:69.2%;top:74%;">?</div>
+  <div class="circuit-intern" id="yi33" style="left:58.6%;top:74%;">?</div>
+  <div class="circuit-intern" id="yi34" style="left:48%;top:74%;">?</div>
+  <div class="circuit-intern" id="yi35" style="left:37.5%;top:74%;">?</div>
+  <div class="circuit-intern" id="d'00" style="left:29.3%;top:22%;">?</div>
+  <div class="circuit-intern" id="d'01" style="left:18.8%;top:22%;">?</div>
+  <div class="circuit-intern" id="d'02" style="left:8.3%;top:22%;">?</div>
+  <div class="circuit-intern" id="d'10" style="left:50.3%;top:42.3%;">?</div>
+  <div class="circuit-intern" id="d'11" style="left:39.8%;top:42.3%;">?</div>
+  <div class="circuit-intern" id="d'12" style="left:29.3%;top:42.3%;">?</div>
+  <div class="circuit-intern" id="d'13" style="left:18.8%;top:42.3%;">?</div>
+  <div class="circuit-intern" id="d'20" style="left:71.8%;top:63%;">?</div>
+  <div class="circuit-intern" id="d'21" style="left:61%;top:63%;">?</div>
+  <div class="circuit-intern" id="d'22" style="left:50.5%;top:63%;">?</div>
+  <div class="circuit-intern" id="d'23" style="left:40%;top:63%;">?</div>
+  <div class="circuit-intern" id="d'24" style="left:29.5%;top:63%;">?</div>
+  <div class="circuit-intern" id="d'30" style="left:92.8%;top:83.3%;">?</div>
+  <div class="circuit-intern" id="d'31" style="left:82.3%;top:83.3%;">?</div>
+  <div class="circuit-intern" id="d'32" style="left:71.8%;top:83.3%;">?</div>
+  <div class="circuit-intern" id="d'33" style="left:61.2%;top:83.3%;">?</div>
+  <div class="circuit-intern" id="d'34" style="left:50.6%;top:83.3%;">?</div>
+  <div class="circuit-intern" id="d'35" style="left:40%;top:83.3%;">?</div>
+  -->
+  <div class="circuit-intern" id="d00" style="left:28.5%;top:27%;">?</div>
+  <div class="circuit-intern" id="d01" style="left:18%;top:27%;">?</div>
+  <div class="circuit-intern" id="d02" style="left:7.5%;top:27%;visibility:hidden;">?</div>
+  <div class="circuit-intern" id="d10" style="left:49.5%;top:47.5%;">?</div>
+  <div class="circuit-intern" id="d11" style="left:39%;top:47.5%;">?</div>
+  <div class="circuit-intern" id="d12" style="left:28.5%;top:47.5%;">?</div>
+  <div class="circuit-intern" id="d13" style="left:18%;top:47.5%;visibility:hidden;">?</div>
+  <div class="circuit-intern" id="d20" style="left:70.5%;top:68%;">?</div>
+  <div class="circuit-intern" id="d21" style="left:60%;top:68%;">?</div>
+  <div class="circuit-intern" id="d22" style="left:49.5%;top:68%;">?</div>
+  <div class="circuit-intern" id="d23" style="left:39%;top:68%;">?</div>
+  <div class="circuit-intern" id="d24" style="left:28.5%;top:68%;visibility:hidden;">?</div>
+  <div class="circuit-intern" id="d30" style="left:91.5%;top:88%;">?</div>
+  <div class="circuit-intern" id="d31" style="left:81%;top:88%;">?</div>
+  <div class="circuit-intern" id="d32" style="left:70.5%;top:88%;">?</div>
+  <div class="circuit-intern" id="d33" style="left:60%;top:88%;">?</div>
+  <div class="circuit-intern" id="d34" style="left:49.5%;top:88%;">?</div>
+  <div class="circuit-intern" id="d35" style="left:39%;top:88%;">?</div>
+  <div class="circuit-output" id="q0" style="left:33.2%;bottom:0%;">?</div>
+  <div class="circuit-output" id="q1" style="left:22.7%;bottom:0%;">?</div>
+  <div class="circuit-output" id="q2" style="left:12.2%;bottom:0%;">?</div>
+  <div class="circuit-output" id="q3" style="left:1.5%;bottom:0%;">?</div>
+  <div class="circuit-output" id="r0" style="left:92.8%;bottom:0%;">?</div>
+  <div class="circuit-output" id="r1" style="left:82.2%;bottom:0%;">?</div>
+  <div class="circuit-output" id="r2" style="left:71.6%;bottom:0%;">?</div>
+  <div class="circuit-output" id="r3" style="left:61%;bottom:0%;">?</div>
+  <div class="circuit-output" id="r4" style="left:50.5%;bottom:0%;">?</div>
+  <div class="circuit-output" id="r5" style="left:39.9%;bottom:0%;">?</div>
+</div>
+  </body>
+</html>

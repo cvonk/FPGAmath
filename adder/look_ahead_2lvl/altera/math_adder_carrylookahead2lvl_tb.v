@@ -1,10 +1,10 @@
 // Math, carry lookahead adder, test bench
 //
-// Platform: Altera Cyclone IV using Quartus 16.1
-// Documentation: http://www.coertvonk.com/technology/logic/fpga-math-verilog-12758/4
+// Platform: Altera Cyclone IV using Quartus >=16.1
+// https://coertvonk.com/hw/building-math-circuits/faster-parameterized-adder-in-verilog-30769
 //
 // GNU GENERAL PUBLIC LICENSE Version 3, check the file LICENSE for more information
-// (c) Copyright 2015-2016, Johan Vonk and Coert Vonk
+// (c) Copyright 2015-2016,2021, Johan Vonk and Coert Vonk
 // All rights reserved.  Use of copyright notice does not imply publication.
 // All text above must be included in any redistribution
 

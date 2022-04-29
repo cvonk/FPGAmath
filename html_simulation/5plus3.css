@@ -1,0 +1,34 @@
+.svg5plus3 #number3 polygon,
+.svg5plus3 #number3 line {
+  animation: number3 10s linear 0s 1 normal;
+}
+@keyframes number3 {
+   0 % { transform: translateX(0)     translateY(0); }
+   10% { transform: translateX(71px)  translateY(-25px); }
+   20% { transform: translateX(142px) translateY(0); }
+   30% { transform: translateX(142px) translateY(0); opacity: 1; }
+   50% { transform: translateX(142px) translateY(0); opacity: 0; }
+  100% { transform: translateX(142px) translateY(0); opacity: 0; }
+}
+.svg5plus3 #number5 polygon,
+.svg5plus3 #number5 line {
+  animation: number5 10s linear 0s 1 normal;
+}
+@keyframes number5 {
+   30% { opacity: 1; }
+   50% { opacity: 0; }
+  100% { opacity: 0; }
+}
+.svg5plus3  #number8 {
+  display: inline;
+}
+.svg5plus3 #number8 polygon,
+.svg5plus3 #number8 line {
+  animation: number8 10s linear 0s 1 normal;
+  opacity: 0;
+}
+@keyframes number8 {
+   40% { opacity: 0; }
+   50% { opacity: 1; }
+  100% { opacity: 1; }
+}

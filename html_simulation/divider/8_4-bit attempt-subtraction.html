@@ -1,0 +1,119 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="eng-US">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../circuit-simulation.css" type="text/css">
+    <script src="8_4-bit attempt-subtraction.js" type="text/javascript"></script>
+    <script src="../circuit-simulation.js" type="text/javascript"></script>
+  </head>
+  <body>
+<div class="circuit-container" id="circuit-asd">
+  <img class="circuit-schematic" alt="" src="https://coertvonk.com/wp-content/logic-simulation/divider/8_4-bit attempt-subtraction.svg">
+  <div class="circuit-input" id="x0" style="left:94%;bottom:97%;">0</div>
+  <div class="circuit-input" id="x1" style="left:86%;bottom:97%;">1</div>
+  <div class="circuit-input" id="x2" style="left:78%;bottom:97%;">0</div>
+  <div class="circuit-input" id="x3" style="left:70%;bottom:97%;">0</div>
+  <div class="circuit-input" id="x4" style="left:62%;bottom:97%;">0</div>
+  <div class="circuit-input" id="x5" style="left:54%;bottom:97%;">0</div>
+  <div class="circuit-input" id="x6" style="left:46%;bottom:97%;">0</div>
+  <div class="circuit-input" id="x7" style="left:38%;bottom:97%;">1</div>
+  <div class="circuit-input" id="y0" style="left:31.3%;bottom:97%;">1</div>
+  <div class="circuit-input" id="y1" style="left:23.3%;bottom:97%;">0</div>
+  <div class="circuit-input" id="y2" style="left:15.3%;bottom:97%;">1</div>
+  <div class="circuit-input" id="y3" style="left:7.3%;bottom:97%;">1</div>
+  <div class="circuit-intern" id="b00" style="left:34%;bottom:91.3%;">x</div>
+  <div class="circuit-intern" id="b01" style="left:26%;bottom:91.3%;">x</div>
+  <div class="circuit-intern" id="b02" style="left:18%;bottom:91.3%;">x</div>
+  <div class="circuit-intern" id="b03" style="left:10%;bottom:91.3%;">x</div>
+  <div class="circuit-intern" id="b04" style="left:0%;bottom:88%;">x</div>
+  <div class="circuit-intern" id="b10" style="left:42%;bottom:80%;">x</div>
+  <div class="circuit-intern" id="b11" style="left:34%;bottom:80%;">x</div>
+  <div class="circuit-intern" id="b12" style="left:26%;bottom:80%;">x</div>
+  <div class="circuit-intern" id="b13" style="left:18%;bottom:80%;">x</div>
+  <div class="circuit-intern" id="b14" style="left:8%;bottom:76.7%;">x</div>
+  <div class="circuit-intern" id="b20" style="left:50%;bottom:68.8%;">x</div>
+  <div class="circuit-intern" id="b21" style="left:42%;bottom:68.8%;">x</div>
+  <div class="circuit-intern" id="b22" style="left:34%;bottom:68.8%;">x</div>
+  <div class="circuit-intern" id="b23" style="left:26%;bottom:68.8%;">x</div>
+  <div class="circuit-intern" id="b24" style="left:16%;bottom:65.5%;">x</div>
+  <div class="circuit-intern" id="b30" style="left:58%;bottom:57.4%;">x</div>
+  <div class="circuit-intern" id="b31" style="left:50%;bottom:57.4%;">x</div>
+  <div class="circuit-intern" id="b32" style="left:42%;bottom:57.4%;">x</div>
+  <div class="circuit-intern" id="b33" style="left:34%;bottom:57.4%;">x</div>
+  <div class="circuit-intern" id="b34" style="left:24%;bottom:54.1%;">x</div>
+  <div class="circuit-intern" id="b40" style="left:66%;bottom:46.1%;">x</div>
+  <div class="circuit-intern" id="b41" style="left:58%;bottom:46.1%;">x</div>
+  <div class="circuit-intern" id="b42" style="left:50%;bottom:46.1%;">x</div>
+  <div class="circuit-intern" id="b43" style="left:42%;bottom:46.1%;">x</div>
+  <div class="circuit-intern" id="b44" style="left:32%;bottom:42.8%;">x</div>
+  <div class="circuit-intern" id="b50" style="left:74%;bottom:34.8%;">x</div>
+  <div class="circuit-intern" id="b51" style="left:66%;bottom:34.8%;">x</div>
+  <div class="circuit-intern" id="b52" style="left:58%;bottom:34.8%;">x</div>
+  <div class="circuit-intern" id="b53" style="left:50%;bottom:34.8%;">x</div>
+  <div class="circuit-intern" id="b54" style="left:40%;bottom:31.5%;">x</div>
+  <div class="circuit-intern" id="b60" style="left:82%;bottom:23.5%;">x</div>
+  <div class="circuit-intern" id="b61" style="left:74%;bottom:23.5%;">x</div>
+  <div class="circuit-intern" id="b62" style="left:66%;bottom:23.5%;">x</div>
+  <div class="circuit-intern" id="b63" style="left:58%;bottom:23.5%;">x</div>
+  <div class="circuit-intern" id="b64" style="left:48%;bottom:20.2%;">x</div>
+  <div class="circuit-intern" id="b70" style="left:90%;bottom:12.2%;">x</div>
+  <div class="circuit-intern" id="b71" style="left:82%;bottom:12.2%;">x</div>
+  <div class="circuit-intern" id="b72" style="left:74%;bottom:12.2%;">x</div>
+  <div class="circuit-intern" id="b73" style="left:66%;bottom:12.2%;">x</div>
+  <div class="circuit-intern" id="b74" style="left:56%;bottom:8.9%;">x</div>
+  <div class="circuit-intern" id="d00" style="left:37.5%;bottom:83.3%;">x</div>
+  <div class="circuit-intern" id="d01" style="left:29.5%;bottom:83.3%;">x</div>
+  <div class="circuit-intern" id="d02" style="left:21.5%;bottom:83.3%;">x</div>
+  <div class="circuit-intern" id="d03" style="left:13.5%;bottom:83.3%;">x</div>
+  <div class="circuit-intern" id="d04" style="left:5.5%;bottom:83.3%;visibility:hidden;">x</div>
+  <div class="circuit-intern" id="d10" style="left:45.5%;bottom:72%;">x</div>
+  <div class="circuit-intern" id="d11" style="left:37.5%;bottom:72%;">x</div>
+  <div class="circuit-intern" id="d12" style="left:29.5%;bottom:72%;">x</div>
+  <div class="circuit-intern" id="d13" style="left:21.5%;bottom:72%;">x</div>
+  <div class="circuit-intern" id="d14" style="left:13.5%;bottom:72%;visibility:hidden;">x</div>
+  <div class="circuit-intern" id="d20" style="left:53.5%;bottom:60.7%;">x</div>
+  <div class="circuit-intern" id="d21" style="left:45.5%;bottom:60.7%;">x</div>
+  <div class="circuit-intern" id="d22" style="left:37.5%;bottom:60.7%;">x</div>
+  <div class="circuit-intern" id="d23" style="left:29.5%;bottom:60.7%;">x</div>
+  <div class="circuit-intern" id="d24" style="left:21.5%;bottom:60.7%;visibility:hidden;">x</div>
+  <div class="circuit-intern" id="d30" style="left:61.5%;bottom:49.4%;">x</div>
+  <div class="circuit-intern" id="d31" style="left:53.5%;bottom:49.4%;">x</div>
+  <div class="circuit-intern" id="d32" style="left:45.5%;bottom:49.4%;">x</div>
+  <div class="circuit-intern" id="d33" style="left:37.5%;bottom:49.4%;">x</div>
+  <div class="circuit-intern" id="d34" style="left:29.5%;bottom:49.4%;visibility:hidden">x</div>
+  <div class="circuit-intern" id="d40" style="left:69.5%;bottom:38.1%;">x</div>
+  <div class="circuit-intern" id="d41" style="left:61.5%;bottom:38.1%;">x</div>
+  <div class="circuit-intern" id="d42" style="left:53.5%;bottom:38.1%;">x</div>
+  <div class="circuit-intern" id="d43" style="left:45.5%;bottom:38.1%;">x</div>
+  <div class="circuit-intern" id="d44" style="left:37.5%;bottom:38.1%;visibility:hidden">x</div>
+  <div class="circuit-intern" id="d50" style="left:77.5%;bottom:26.8%;">x</div>
+  <div class="circuit-intern" id="d51" style="left:69.5%;bottom:26.8%;">x</div>
+  <div class="circuit-intern" id="d52" style="left:61.5%;bottom:26.8%;">x</div>
+  <div class="circuit-intern" id="d53" style="left:53.5%;bottom:26.8%;">x</div>
+  <div class="circuit-intern" id="d54" style="left:45.5%;bottom:26.8%;visibility:hidden">x</div>
+  <div class="circuit-intern" id="d60" style="left:85.5%;bottom:15.5%;">x</div>
+  <div class="circuit-intern" id="d61" style="left:77.5%;bottom:15.5%;">x</div>
+  <div class="circuit-intern" id="d62" style="left:69.5%;bottom:15.5%;">x</div>
+  <div class="circuit-intern" id="d63" style="left:61.5%;bottom:15.5%;">x</div>
+  <div class="circuit-intern" id="d64" style="left:53.5%;bottom:15.5%;visibility:hidden">x</div>
+  <div class="circuit-intern" id="d70" style="left:93.5%;bottom:4.2%;">x</div>
+  <div class="circuit-intern" id="d71" style="left:85.5%;bottom:4.2%;">x</div>
+  <div class="circuit-intern" id="d72" style="left:77.5%;bottom:4.2%;">x</div>
+  <div class="circuit-intern" id="d73" style="left:69.5%;bottom:4.2%;">x</div>
+  <div class="circuit-intern" id="d74" style="left:61.5%;bottom:4.2%;">x</div>
+  <div class="circuit-output" id="q0" style="left:57%;bottom:0%;">x</div>
+  <div class="circuit-output" id="q1" style="left:49%;bottom:0%;">x</div>
+  <div class="circuit-output" id="q2" style="left:41%;bottom:0%;">x</div>
+  <div class="circuit-output" id="q3" style="left:33%;bottom:0%;">x</div>
+  <div class="circuit-output" id="q4" style="left:25%;bottom:0%;">x</div>
+  <div class="circuit-output" id="q5" style="left:17%;bottom:0%;">x</div>
+  <div class="circuit-output" id="q6" style="left:9%;bottom:0%;">x</div>
+  <div class="circuit-output" id="q7" style="left:1%;bottom:0%;">x</div>
+  <div class="circuit-output" id="r0" style="left:94.2%;bottom:0%;">x</div>
+  <div class="circuit-output" id="r1" style="left:86.2%;bottom:0%;">x</div>
+  <div class="circuit-output" id="r2" style="left:78.2%;bottom:0%;">x</div>
+  <div class="circuit-output" id="r3" style="left:70.2%;bottom:0%;">x</div>
+  <div class="circuit-output" id="r4" style="left:62.2%;bottom:0%;">x</div>
+</div>
+  </body>
+</html>

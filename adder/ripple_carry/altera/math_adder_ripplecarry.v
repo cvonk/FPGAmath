@@ -1,10 +1,10 @@
 // Math, ripple carry adder, main
 //
-// Platform: Altera Cyclone IV using Quartus 16.1
-// Documentation: http://www.coertvonk.com/technology/logic/fpga-math-verilog-12758/3
+// Platform: Altera Cyclone IV using Quartus >=16.1
+// Documentation: https://coertvonk.com/hw/building-math-circuits/parameterized-adder-and-subtractor-in-verilog-30766
 //
 // GNU GENERAL PUBLIC LICENSE Version 3, check the file LICENSE for more information
-// (c) Copyright 2015-2016, Johan Vonk and Coert Vonk
+// (c) Copyright 2015-2016,2022 Johan Vonk and Coert Vonk
 // All rights reserved.  Use of copyright notice does not imply publication.
 // All text above must be included in any redistribution
 
